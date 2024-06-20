@@ -1,0 +1,10 @@
+import { SourceInfo } from '@paperback/types'
+import { DebugSource, DebugSourceInfo } from '../../srcDebug/DebugSource'
+
+export const [[SourceName]]Info: SourceInfo = {
+    name: '[[SourceName]]',
+    ...DebugSourceInfo
+}
+export class [[SourceName]] extends DebugSource {
+    DEBUG_SERVER_URL = 'http://[[Ip]]:8042'
+}
